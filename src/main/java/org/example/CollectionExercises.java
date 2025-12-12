@@ -1,8 +1,5 @@
 package org.example;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class CollectionExercises {
     public String[] makeFruitStringArray() {
@@ -24,12 +21,11 @@ public class CollectionExercises {
         // Create and return an array of strings with the given size (from the parameter)
         // Use a loop to set every element to "apple"
         // Replace the line below with your implementation
-            size = 3;
+
 
             String[] fruits = new String[size];
 
-            for (int i = 0; i < size; i++)
-                fruits[i] = "apple";
+        Arrays.fill(fruits, "apple");
 
             return fruits;
 
